@@ -1,0 +1,15 @@
+dependencies {
+    implementation project(':repository')
+    implementation project(':model')
+    implementation "com.google.cloud:spring-cloud-gcp-starter-data-datastore:4.8.4"
+
+
+}
+bootJar {
+    enabled = false
+}
+jar {
+    enabled = true
+
+}
+

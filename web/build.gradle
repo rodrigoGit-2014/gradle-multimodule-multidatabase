@@ -1,0 +1,19 @@
+dependencies {
+    implementation project(':model')
+    implementation project(':service')
+
+
+    if (rootProject.ext.repoProfile == rootProject.ext.POSTGRES) {
+        print("postgres")
+        implementation project(':repository-postgres')
+    } else if (rootProject.ext.repoProfile == rootProject.ext.MYSQL) {
+        print("mysql")
+        implementation project(':repository-mysql')
+    } else if (rootProject.ext.repoProfile == rootProject.ext.DATASTORE) {
+        print("datastore")
+        implementation project(':repository-datastore')
+    }
+
+
+}
+

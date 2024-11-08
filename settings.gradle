@@ -1,0 +1,3 @@
+rootProject.name = 'cartApp'
+
+include 'web', 'service', 'model', 'repository', 'repository-postgres', 'repository-mysql', 'repository-datastore'

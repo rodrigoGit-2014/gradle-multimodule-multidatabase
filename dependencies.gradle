@@ -1,0 +1,7 @@
+ext {
+    dependenciesMap = [
+            springBootWeb       : 'org.springframework.boot:spring-boot-starter-web:3.2.0',
+            lombok              : 'org.projectlombok:lombok:1.18.30',
+            springBootTest      : 'org.springframework.boot:spring-boot-starter-test:3.2.0',
+    ]
+}
